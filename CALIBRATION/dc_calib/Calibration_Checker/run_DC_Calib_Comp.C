@@ -35,14 +35,14 @@ void run_DC_Calib_Comp(Int_t RunNumber = 0, Int_t MaxEvent = 0, string Detector 
   }
   // Need to convert string to char* for use in form command, do via .c_str()
   if(Hostname.Contains("farm")){
-    rootFileNameString = Form("/group/c-kaonlt/USERS/${USER}/hallc_replay_lt/ROOTfilesDCCalib/%s_DC_Calib_Check_Coin_%i_%i.root", Detector.c_str(), RunNumber, MaxEvent);
-    Outpath = "/volatile/hallc/c-kaonlt/${USER}/OUTPUT/DC_Calib";
-    Histopath = "/volatile/hallc/c-kaonlt/${USER}/HISTOGRAMS/DC_Calib";
+    rootFileNameString = Form("/group/c-pionlt/USERS/${USER}/hallc_replay_lt/ROOTfilesDCCalib/%s_DC_Calib_Check_Coin_%i_%i.root", Detector.c_str(), RunNumber, MaxEvent);
+    Outpath = "/volatile/hallc/c-pionlt/${USER}/OUTPUT/DC_Calib";
+    Histopath = "/volatile/hallc/c-pionlt/${USER}/HISTOGRAMS/DC_Calib";
   }
   else if(Hostname.Contains("qcd")){
-    rootFileNameString = Form("/group/c-kaonlt/USERS/${USER}/hallc_replay_lt/ROOTfilesDCCalib/%s_DC_Calib_Check_Coin_%i_%i.root", Detector.c_str(), RunNumber, MaxEvent);
-    Outpath = "/volatile/hallc/c-kaonlt/${USER}/OUTPUT/DC_Calib";
-    Histopath = "/volatile/hallc/c-kaonlt/${USER}/HISTOGRAMS/DC_Calib";
+    rootFileNameString = Form("/group/c-pionlt/USERS/${USER}/hallc_replay_lt/ROOTfilesDCCalib/%s_DC_Calib_Check_Coin_%i_%i.root", Detector.c_str(), RunNumber, MaxEvent);
+    Outpath = "/volatile/hallc/c-pionlt/${USER}/OUTPUT/DC_Calib";
+    Histopath = "/volatile/hallc/c-pionlt/${USER}/HISTOGRAMS/DC_Calib";
   }
   else if (Hostname.Contains("phys.uregina.ca")){
     rootFileNameString = Form("/dsk3/${USER}/JLab/ROOTfiles/DC_Calib/%s_DC_Calib_Check_Coin_%i_%i.root", Detector.c_str(), RunNumber, MaxEvent);
